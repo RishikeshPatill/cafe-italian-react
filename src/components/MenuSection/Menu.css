@@ -1,0 +1,113 @@
+#menuMain {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menuHeader {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 60px;
+}
+
+#exploreText {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+#menuTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+#menuGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: calc(100% - 120px);
+  max-width: 1400px;
+  margin: 0 auto 60px auto;
+}
+
+.menuCard {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menuCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.menuCard:hover img {
+  transform: scale(1.05);
+}
+
+#menuFooter {
+  margin-top: 20px;
+}
+
+#viewFullMenuBtn {
+  padding: 14px 40px;
+  background-color: #D4A574;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+#viewFullMenuBtn:hover {
+  background-color: #3988ff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  #menuGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #menuMain {
+    padding: 60px 0;
+  }
+
+  #menuHeader {
+    padding: 0 20px;
+  }
+
+  #menuTitle {
+    font-size: 2.5rem;
+  }
+
+  #menuGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .menuCard {
+    height: 350px;
+  }
+}

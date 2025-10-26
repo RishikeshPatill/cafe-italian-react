@@ -1,0 +1,140 @@
+#heroMain {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+#topNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  color: white;
+  z-index: 10;
+}
+
+#centerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+#navLinks {
+  display: flex;
+  gap: 30px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#navLinks a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#navLinks a:hover {
+  color: #050505;
+}
+
+#cafeLogo img {
+  height: 60px;
+  width: auto;
+}
+
+#bookBtn {
+  padding: 14px 40px;
+  background-color: #D4A574;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+#bookBtn:hover {
+  background-color: #3988ff;
+  color: black;
+   transform: translateY(-2px);
+}
+
+#welcomeText {
+  font-size: 7rem;
+  font-weight: 900;
+  color: #fff4e3;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 32px;
+  line-height: 1.2;
+  font-style: italic;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#viewMenuBtn {
+  padding: 14px 40px;
+  background-color: #D4A574;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+#viewMenuBtn:hover {
+    color:black;
+  background-color: #3988ff;
+   transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  #topNav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  #cafeLogo img {
+    height: 40px;
+  }
+
+  #bookBtn, #viewMenuBtn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  #welcomeText {
+    font-size: 3rem;
+  }
+}
