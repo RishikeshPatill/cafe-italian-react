@@ -50,7 +50,7 @@
   gap: 30px;
   font-family: 'Manrope', sans-serif;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #navLinks a {
@@ -61,11 +61,11 @@
 }
 
 #navLinks a:hover {
-  color: #050505;
+  color: #3988ff;
 }
 
 #cafeLogo img {
-  height: 60px;
+  height: 75px;
   width: auto;
 }
 
