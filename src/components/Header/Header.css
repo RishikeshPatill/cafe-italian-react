@@ -1,103 +1,145 @@
 #headerMain{
-    width: full;
-    height: 50px;
+    width: 100%;
+    min-height: 50px;
     background-color: #050505;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 8px;
+    padding: 8px 60px;
+    align-items: center;
 }
+
 #block1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
 }
+
 #textBlock1{
-    height: 5px;
     display: flex;
     flex-direction: row;
-    padding-right: 8px;
-    padding-left: 8px;
+    align-items: center;
+    gap: 8px;
 }
+
 #locationLogo{
-    padding: 10px;
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
 }
+
 #text1{
-   margin-top: 12px;
-   font-family: 'Roboto',sans-serif;
+   font-family: 'Roboto', sans-serif;
    font-size: 14px;
    font-weight: 400;
    line-height: 150%;
-   letter-spacing: 3%;
+   color: #fff;
 }
+
 #textBlock2{
-    height: 5px;
     display: flex;
     flex-direction: row;
-    padding-right: 8px;
-    padding-left: 8px;
+    align-items: center;
+    gap: 8px;
 }
+
 #clockLogo{
-    padding: 10px;
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
 }
+
 #text2{
-    margin-top: 12px;
-   font-family: 'Roboto',sans-serif;
+   font-family: 'Roboto', sans-serif;
    font-size: 14px;
    font-weight: 400;
    line-height: 150%;
-   letter-spacing: 3%;
+   color: #fff;
 }
 
 #block2{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
 }
-#textBlock3{
-    height: 5px;
-    display: flex;
-    flex-direction: row;
-    padding-right: 8px;
-    padding-left: 8px;
-}
-#phoneLogo{
-    padding: 10px;
-    height: 24px;
-    width: 24px;
-}
-#text3{
-   margin-top: 12px;
-   font-family: 'Roboto',sans-serif;
-   font-size: 14px;
-   font-weight: 400;
-   line-height: 150%;
-   letter-spacing: 3%;
-}
-#textBlock4{
-    height: 5px;
-    display: flex;
-    flex-direction: row;
-    padding-right: 8px;
-    padding-left: 8px;
-}
-#emailLogo{
-    padding: 10px;
-    height: 24px;
-    width: 24px;
 
+#textBlock3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
 }
-#text4{
-   margin-top: 12px;
-   font-family: 'Roboto',sans-serif;
+
+#phoneLogo{
+    height: 20px;
+    width: 20px;
+}
+
+#text3{
+   font-family: 'Roboto', sans-serif;
    font-size: 14px;
    font-weight: 400;
    line-height: 150%;
-   letter-spacing: 3%;
+   color: #fff;
+}
+
+#textBlock4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#emailLogo{
+    height: 20px;
+    width: 20px;
+}
+
+#text4{
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 150%;
+   color: #fff;
+   padding-right: 100px;
+}
+
+@media (max-width: 1024px) {
+    #headerMain {
+        padding: 8px 40px;
+    }
+    
+    #text1, #text2, #text3, #text4 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    #headerMain {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    #block1, #block2 {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    #text1, #text2, #text3, #text4 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #locationLogo, #clockLogo, #phoneLogo, #emailLogo {
+        height: 18px;
+        width: 18px;
+    }
+    
+    #text1, #text2, #text3, #text4 {
+        font-size: 11px;
+    }
 }
