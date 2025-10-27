@@ -8,6 +8,10 @@ import Menu from './components/MenuSection/Menu'
 import Service from './components/ServiceSection/Service'
 import Highlight from './components/HighlightsSection/Highlight'
 import Book from './components/BookNowSection/Book'
+import CustomerFeedback from './components/CustomerFeedbackSection/CustomerFeedback'
+import FollowUs from './components/FollowUsSection/FollowUs'
+import ContactUs from './components/ContactUsSection/ContactUs'
+import FooterSection from './components/FooterSection/FooterSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +24,10 @@ function App() {
      <Service/>
      <Highlight/>
      <Book/>
+     <CustomerFeedback/>
+     <FollowUs/>
+     <ContactUs/>
+     <FooterSection/>
      </>
   )
 

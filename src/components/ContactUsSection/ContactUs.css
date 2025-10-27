@@ -1,0 +1,109 @@
+#contactUsMain {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactUsHeader {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#connectLabel {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+#contactUsTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+#contactUsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: calc(100% - 200px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contactCard {
+  background-color: rgba(26, 26, 26, 0.8);
+  padding: 40px 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contactCard:hover {
+  background-color: rgba(26, 26, 26, 0.95);
+  transform: translateY(-5px);
+}
+
+.contactCardTitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.contactCardContent {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #D4A574;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  #contactUsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 120px);
+  }
+}
+
+@media (max-width: 768px) {
+  #contactUsMain {
+    padding: 60px 0;
+  }
+
+  #contactUsHeader {
+    margin-bottom: 60px;
+  }
+
+  #contactUsTitle {
+    font-size: 2.5rem;
+  }
+
+  #contactUsGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: calc(100% - 40px);
+  }
+
+  .contactCard {
+    padding: 30px 20px;
+  }
+
+  .contactCardContent {
+    font-size: 1.1rem;
+  }
+}
